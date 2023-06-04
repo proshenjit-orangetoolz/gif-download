@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import GifDownload from "./components/GifDownload";
+import GifDownloadWithGifShot from "./components/GifDownloadWithGifShot";
+import GifDownloadWithFileSaver from "./components/GifDownloadWithFileSaver";
+import DragableComponent from "./components/DragableComponent";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            {/*<GifDownloadWithFileSaver/>*/}
+            {/*<GifDownloadWithGifShot/>*/}
+            {/*<GifDownload/>*/}
+            <DragableComponent/>
+            {/*<h1>Fabric JS - Text on Image</h1>*/}
+            {/*<MemeCreator/>*/}
+            {/*<h1>Fabric JS - Text on Image</h1>*/}
+            {/*<ImageUpload/>*/}
+        </div>
+
+    );
 }
 
 export default App;
